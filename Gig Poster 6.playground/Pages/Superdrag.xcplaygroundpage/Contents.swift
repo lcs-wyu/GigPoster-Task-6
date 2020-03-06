@@ -46,20 +46,11 @@ let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 // Begin your solution here...
 canvas.fillColor = lightBlue
 canvas.drawRectangle(at: Point(x: -10, y: -10), width: 1000, height: 1000)
+canvas.drawText(message: "superdrag", at: Point(x: 23, y: 80), size: 50, kerning: 0.0)
+canvas.drawText(message: "with", at: Point(x: 23, y: 48),size: 8)
+canvas.drawText(message: "with", at: Point(x: 23, y: 48),size: 8)
 
 
-/*:
- ## Use Source Control
- 
- To create evidence that supports your case for exceeding expectations for thread 3:
-
- * You *must* commit and push regularly ... *not* just at the end of this task.
-
- * You *must* complete your work prior to 1:00 PM on Friday, March 6, 2020.
-
- ## Template code
- The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
- */
 PlaygroundPage.current.liveView = canvas
 
 
