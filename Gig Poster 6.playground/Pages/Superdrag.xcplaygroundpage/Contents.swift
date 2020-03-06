@@ -48,7 +48,15 @@ canvas.fillColor = lightBlue
 canvas.drawRectangle(at: Point(x: -10, y: -10), width: 1000, height: 1000)
 canvas.drawText(message: "superdrag", at: Point(x: 23, y: 80), size: 50, kerning: 0.0)
 canvas.drawText(message: "with", at: Point(x: 23, y: 48),size: 8)
-canvas.drawText(message: "with", at: Point(x: 23, y: 48),size: 8)
+canvas.drawText(message: "the shambles", at: Point(x: 23, y: 35),size: 8)
+canvas.drawText(message: "and lifter", at: Point(x: 23, y: 22),size: 8)
+canvas.drawText(message: "thursday", at: Point(x: 110, y: 48),size: 8)
+canvas.drawText(message: "june 13 1996 / 8:30", at: Point(x: 110, y: 35),size: 8)
+canvas.drawText(message: "no age limit", at: Point(x: 110, y: 22),size: 8)
+canvas.drawText(message: "at brick by brick", at: Point(x: 300, y: 48),size: 8)
+canvas.drawText(message: "1130 buenos avenue", at: Point(x: 300, y: 35),size: 8)
+canvas.drawText(message: "san diego, ca", at: Point(x: 300, y: 22),size: 8)
+
 
 
 PlaygroundPage.current.liveView = canvas
