@@ -56,7 +56,14 @@ canvas.drawText(message: "no age limit", at: Point(x: 110, y: 22),size: 8)
 canvas.drawText(message: "at brick by brick", at: Point(x: 300, y: 48),size: 8)
 canvas.drawText(message: "1130 buenos avenue", at: Point(x: 300, y: 35),size: 8)
 canvas.drawText(message: "san diego, ca", at: Point(x: 300, y: 22),size: 8)
-
+canvas.borderColor = offWhite
+canvas.translate(to: Point(x: 200, y: 400))
+canvas.fillColor = offWhite
+canvas.drawEllipse(at: Point(x: 0, y: 0), width: 15, height: 15)
+canvas.drawShapesWithFill = false
+for n in stride(from: 49, through: 392, by: 49) {
+    canvas.drawEllipse(at: Point(x: 0, y: 0), width: n, height: n, borderWidth: 12)
+}
 
 
 PlaygroundPage.current.liveView = canvas
