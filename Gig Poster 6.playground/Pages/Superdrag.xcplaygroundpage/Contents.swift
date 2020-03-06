@@ -64,8 +64,16 @@ canvas.drawShapesWithFill = false
 for n in stride(from: 49, through: 392, by: 49) {
     canvas.drawEllipse(at: Point(x: 0, y: 0), width: n, height: n, borderWidth: 12)
 }
+canvas.borderColor = translucentPink
+canvas.translate(to: Point(x: 0, y: 100))
+canvas.fillColor = translucentPink
+canvas.drawShapesWithFill = true
+canvas.drawEllipse(at: Point(x: 0, y: 0), width: 15, height: 15)
+canvas.drawShapesWithFill = false
 
-
+for n in stride(from: 49, through: 392, by: 49) {
+    canvas.drawEllipse(at: Point(x: 0, y: 0), width: n, height: n, borderWidth: 12)
+}
 PlaygroundPage.current.liveView = canvas
 
 
